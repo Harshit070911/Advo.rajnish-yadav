@@ -58,6 +58,24 @@ const Home = () => {
     { icon: <BookOpen size={32} />, title: 'Corporate Law', desc: 'Strategic counsel for businesses of all sizes.' }
   ];
 
+  const testimonials = [
+    {
+      name: "Akirti",
+      role: "Student",
+      text: "When I was unfairly targeted, Adv. Rajnish Chand Yadav stood by me like a pillar of strength. He challenged the charges fiercely and proved my innocence. His dedication to constitutional rights is inspiring."
+    },
+    {
+      name: "Bhupesh",
+      role: "Ex-CM",
+      text: "Facing politically motivated charges was challenging, but Adv. Rajnish's strategic approach and profound understanding of the law were instrumental in securing my bail. A true legal powerhouse."
+    },
+    {
+      name: "Prakash",
+      role: "Farmer",
+      text: "We were fighting a difficult land dispute, but Adv. Rajnish Chand Yadav handled our case with utmost dedication and respect. Thanks to his relentless efforts, justice prevailed for our family."
+    }
+  ];
+
   return (
     <div className="home">
       {/* Hero Section */}
@@ -244,7 +262,7 @@ const Home = () => {
           </div>
           
           <div className="grid grid-cols-3">
-            {[1, 2, 3].map((_, index) => (
+            {testimonials.map((testimonial, index) => (
               <motion.div 
                 key={index}
                 className="testimonial-card glass-card"
@@ -259,14 +277,13 @@ const Home = () => {
                   ))}
                 </div>
                 <p className="testimonial-text">
-                  "Advocate Rajnish Yadav provided exceptional legal counsel during a very difficult time. 
-                  His strategic approach and courtroom presence are unmatched."
+                  "{testimonial.text}"
                 </p>
                 <div className="testimonial-author">
                   <div className="author-avatar"></div>
                   <div>
-                    <h4 className="author-name">Ravi Kumar</h4>
-                    <span className="author-title">Business Owner</span>
+                    <h4 className="author-name">{testimonial.name}</h4>
+                    <span className="author-title">{testimonial.role}</span>
                   </div>
                 </div>
               </motion.div>
