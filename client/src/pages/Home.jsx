@@ -36,6 +36,14 @@ const Home = () => {
       tag: "",
       imageSrc: "/newspapers/WhatsApp%20Image%202026-05-06%20at%202.17.59%20AM.jpeg",
       href: "/blog"
+    },
+    {
+      id: 4,
+      title: "NSA Action Against Activists in Noida Labor Protests Challenged by Defense",
+      description: "The article reports NSA action against Satyam Verma and Aakriti over allegations of inciting violent labour protests in Noida. Police alleged their involvement in unrest linked to the Mazdoor Bigul group, where vandalism and arson affected over 300 companies during wage-hike demonstrations. Advocate Rajnish Yadav argued there is no concrete evidence supporting NSA charges and claimed extra sections were added to suppress criticism and target activists unfairly.",
+      tag: "",
+      imageSrc: "/newspapers/4.jpg",
+      href: "/blog"
     }
   ];
   const fadeIn = {
